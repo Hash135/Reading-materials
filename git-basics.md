@@ -1,10 +1,10 @@
-#SETTING UP GIT
+# SETTING UP GIT
 
-##Introduction
+## Introduction
 
 GitHub is a service that allows you to upload your code using Git and to manage your code with a nice web interface. GitHub and Git are not the same thing or even the same company.
 
-###Step 1: Install Git
+### Step 1: Install Git
 
 Step 1.1: Update the system
 
@@ -34,7 +34,7 @@ Make sure your git version is at least 2.28 by running this command:
 
 If the version number is less than 2.28, follow the instructions again.
 
-###Step 2: Configure Git and GitHub
+### Step 2: Configure Git and GitHub
 Step 2.1: Setup Git
 
 For Git to work properly, we need to let it know who we are so that it can link a local Git user (you) to GitHub. When working on a team, this allows people to see what you have committed and who committed each line of code.
