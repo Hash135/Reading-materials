@@ -6,7 +6,7 @@ GitHub is a service that allows you to upload your code using Git and to manage 
 
 ### Step 1: Install Git
 
-Step 1.1: Update the system
+#### Step 1.1: Update the system
 
 Run these commands in the terminal to update the Linux system:
 
@@ -14,7 +14,7 @@ Run these commands in the terminal to update the Linux system:
 
 >sudo apt upgrade
 
-Step 1.2: Install git
+#### Step 1.2: Install git
 
 It’s likely you have git installed already, but to make sure that we have the 
 
@@ -26,7 +26,7 @@ sudo add-apt-repository ppa:git-core/ppa
 
 >sudo apt install git
 
-Step 1.3: Verify version
+#### Step 1.3: Verify version
 
 Make sure your git version is at least 2.28 by running this command:
 
@@ -35,7 +35,7 @@ Make sure your git version is at least 2.28 by running this command:
 If the version number is less than 2.28, follow the instructions again.
 
 ### Step 2: Configure Git and GitHub
-Step 2.1: Setup Git
+#### Step 2.1: Setup Git
 
 For Git to work properly, we need to let it know who we are so that it can link a local Git user (you) to GitHub. When working on a team, this allows people to see what you have committed and who committed each line of code.
 
@@ -59,11 +59,11 @@ To verify things are working properly, enter these commands and verify that the 
 
 >git config --get user.email
 
-Step 2.2: Create a GitHub Account or Sign In
+#### Step 2.2: Create a GitHub Account or Sign In
 
 Go to GitHub.com and create an account! If you already have an account, sign in. You do not need to use the same email address you used before, but it might be a good idea to use the same one to keep things simple.
 
-Step 2.3: Create an SSH Key
+#### Step 2.3: Create an SSH Key
 
 An SSH key is a cryptographically secure identifier. It’s like a really long password used to identify your machine. GitHub uses SSH keys to allow you to upload to your repository without having to type in your username and password every time.
 
@@ -82,7 +82,7 @@ Note: The angle brackets (< >) in the code snippet below indicate that you shoul
 When it prompts you for a location to save the generated key, just push Enter.
 Next, it will ask you for a password; enter one if you wish, but it’s not required.
 
-Step 2.4: Link Your SSH Key with GitHub
+#### Step 2.4: Link Your SSH Key with GitHub
 
 Now, you need to tell GitHub what your SSH key is so that you can push your code without typing in a password every time.
 
@@ -99,7 +99,7 @@ Highlight and copy the output, which starts with ssh-rsa and ends with your emai
 
 Now, go back to GitHub in your browser window and paste the key you copied into the key field. Then, click Add SSH key. You’re done! You’ve successfully added your SSH key!
 
-Step 2.5 Testing your key
+#### Step 2.5 Testing your key
 
 When you test your connection, you'll need to authenticate this action using your password, which is the SSH key passphrase you created earlier. For more information on working with SSH key passphrases, see "Working with SSH key passphrases".
 
@@ -108,7 +108,9 @@ Open Terminal.
 Enter the following:
 
 > ssh -T git@github.com
-# Attempts to ssh to GitHub
+
+Attempts to ssh to GitHub
+
 You may see a warning like this:
 
 > The authenticity of host 'github.com (IP ADDRESS)' can't be established.
